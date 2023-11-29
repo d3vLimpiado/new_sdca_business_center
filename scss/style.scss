@@ -1,0 +1,10 @@
+@use "./var";
+@use "./reset";
+@use "./nav";
+@use "./footer";
+
+body {
+  display: grid;
+  grid-template-rows: 150px 1fr 400px;
+  gap: 10px;
+}

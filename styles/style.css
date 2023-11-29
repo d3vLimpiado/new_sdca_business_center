@@ -1,0 +1,183 @@
+:root {
+  --color_primary: #720F11;
+  --color_dark: #222222;
+  --color_dark2: #272432;
+  --color_light: #FFFFFF;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Gilda;
+  src: url("../assets/fonts/gilda/GildaDisplay-Regular.ttf") format("truetype");
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+i {
+  display: inline-block;
+}
+
+html, body {
+  height: 100%;
+}
+
+.topnav {
+  display: grid;
+  grid-template-columns: 450px 1fr 300px;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--color_primary);
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.logoContainer {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+.logoContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.logoTitle {
+  color: var(--color_light);
+  font-family: "Gilda";
+  font-size: 30px;
+}
+
+.searchBar {
+  position: relative;
+  height: 40px;
+}
+.searchBarInput {
+  width: 100%;
+  height: 100%;
+  padding: 8px 20px;
+  padding-right: 50px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.searchBarIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url("../assets/icons/search.svg");
+  background-size: 100% 100%;
+}
+
+.user {
+  display: flex;
+  gap: 70px;
+  justify-content: flex-end;
+  color: var(--color_light);
+}
+.user i {
+  width: 24px;
+  height: 24px;
+}
+.userCart, .userSec {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+.userCartIcon {
+  background-image: url("../assets/icons/shopping-cart.svg");
+}
+.userSecIcon {
+  background-image: url("../assets/icons/user.svg");
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  background-color: var(--color_dark2);
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--color_light);
+  font-weight: 400;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 286px 1fr;
+  height: 100%;
+  padding-top: 25px;
+  color: var(--color_light);
+  background-color: var(--color_dark2);
+}
+.footer > section:first-child {
+  display: grid;
+  place-items: center;
+  height: 286px;
+}
+.footer > section:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+.footer-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 70px;
+}
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-logo-container img {
+  width: auto;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer-logo-title {
+  font-size: 25px;
+  text-align: center;
+  margin-left: 50px;
+}
+.footer-logo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 270px;
+  background-color: var(--color_light);
+}
+
+body {
+  display: grid;
+  grid-template-rows: 150px 1fr 400px;
+  gap: 10px;
+}
