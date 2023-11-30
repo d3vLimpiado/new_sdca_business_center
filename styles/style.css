@@ -29,6 +29,12 @@ html, body {
   height: 100%;
 }
 
+.headerPrimary {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .topnav {
   display: grid;
   grid-template-columns: 450px 1fr 300px;
@@ -133,9 +139,11 @@ html, body {
   background-color: var(--color_dark2);
 }
 .footer > section:first-child {
-  display: grid;
-  place-items: center;
   height: 286px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
 }
 .footer > section:last-child {
   display: flex;
@@ -147,12 +155,12 @@ html, body {
   position: relative;
   display: flex;
   align-items: center;
-  padding-right: 70px;
+  padding-right: 20px;
 }
 .footer-logo-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
 .footer-logo-container img {
   width: auto;
@@ -161,9 +169,11 @@ html, body {
      object-fit: contain;
 }
 .footer-logo-title {
+  width: -moz-max-content;
+  width: max-content;
   font-size: 25px;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 .footer-logo::after {
   content: "";
@@ -174,6 +184,50 @@ html, body {
   width: 1px;
   height: 270px;
   background-color: var(--color_light);
+}
+.footer-about {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.footer-about-desc {
+  position: relative;
+  width: inherit;
+  max-height: 212px;
+  text-align: justify;
+  font-size: 15px;
+  overflow: hidden;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-decoration: none;
+}
+.footer-social-container {
+  display: flex;
+  align-items: center;
+  color: var(--color_light);
+  text-decoration: none;
+  font-size: 15px;
+}
+.footer-social-container i {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.footer-social-container i.fb {
+  background-image: url("../assets/icons/FacebookLogo.svg");
+}
+.footer-social-container i.yt {
+  background-image: url("../assets/icons/YoutubeLogo.svg");
+}
+.footer-social-container i.ig {
+  background-image: url("../assets/icons/InstagramLogo.svg");
 }
 
 body {
