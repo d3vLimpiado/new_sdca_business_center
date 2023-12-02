@@ -31,16 +31,22 @@ html, body {
 
 .headerPrimary {
   position: sticky;
+  z-index: 20;
   top: 0;
   left: 0;
 }
 
 .topnav {
   display: grid;
+  place-items: center;
+  background-color: var(--color_primary);
+}
+.topnav-content {
+  width: 100%;
+  display: grid;
   grid-template-columns: 450px 1fr 300px;
   align-items: center;
   padding: 0 20px;
-  background-color: var(--color_primary);
 }
 
 .logo {
@@ -116,15 +122,19 @@ html, body {
 }
 
 .nav {
+  display: grid;
+  place-items: center;
+  background-color: var(--color_dark2);
+}
+.nav-content {
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 80px;
-  background-color: var(--color_dark2);
 }
-.nav-link {
+.nav-content-link {
   text-decoration: none;
   color: var(--color_light);
   font-weight: 400;
@@ -132,50 +142,55 @@ html, body {
 
 .footer {
   display: grid;
-  grid-template-rows: 286px 1fr;
-  height: 100%;
-  padding-top: 25px;
+  place-items: center;
   color: var(--color_light);
   background-color: var(--color_dark2);
 }
-.footer > section:first-child {
+.footer-content {
+  display: grid;
+  grid-template-rows: 286px 1fr;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+}
+.footer-content section:first-child {
   height: 286px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 20px;
 }
-.footer > section:last-child {
+.footer-content section:last-child {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 100%;
 }
-.footer-logo {
+.footer-content-logo {
   position: relative;
   display: flex;
   align-items: center;
   padding-right: 20px;
 }
-.footer-logo-container {
+.footer-content-logo-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.footer-logo-container img {
+.footer-content-logo-container img {
   width: auto;
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.footer-logo-title {
+.footer-content-logo-title {
   width: -moz-max-content;
   width: max-content;
   font-size: 25px;
   text-align: center;
   margin-left: 10px;
 }
-.footer-logo::after {
+.footer-content-logo::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -185,7 +200,7 @@ html, body {
   height: 270px;
   background-color: var(--color_light);
 }
-.footer-about {
+.footer-content-about {
   max-width: 800px;
   display: flex;
   flex-direction: column;
@@ -194,7 +209,7 @@ html, body {
   font-size: 20px;
   margin: 0 auto;
 }
-.footer-about-desc {
+.footer-content-about-desc {
   position: relative;
   width: inherit;
   max-height: 212px;
@@ -202,36 +217,138 @@ html, body {
   font-size: 15px;
   overflow: hidden;
 }
-.footer-social {
+.footer-content-social {
   display: flex;
   flex-direction: column;
   gap: 30px;
   text-decoration: none;
 }
-.footer-social-container {
+.footer-content-social-container {
   display: flex;
   align-items: center;
   color: var(--color_light);
   text-decoration: none;
   font-size: 15px;
 }
-.footer-social-container i {
+.footer-content-social-container i {
   width: 40px;
   height: 40px;
   margin-right: 5px;
 }
-.footer-social-container i.fb {
+.footer-content-social-container i.fb {
   background-image: url("../assets/icons/FacebookLogo.svg");
 }
-.footer-social-container i.yt {
+.footer-content-social-container i.yt {
   background-image: url("../assets/icons/YoutubeLogo.svg");
 }
-.footer-social-container i.ig {
+.footer-content-social-container i.ig {
   background-image: url("../assets/icons/InstagramLogo.svg");
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.carousel-controller {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-right, .carousel-left {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: var(--color_primary);
+  opacity: 0.2;
+  transform: translateY(-50%);
+}
+.carousel-right:hover, .carousel-left:hover {
+  opacity: 1;
+}
+.carousel-right img, .carousel-left img {
+  width: 40px;
+  height: 40px;
+}
+.carousel-left {
+  right: unset;
+  left: 10px;
+}
+.carousel-cont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-cont-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.25s ease-in;
+}
+.carousel-cont-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel-cont-img.active {
+  opacity: 1;
+}
+.carousel-preview {
+  position: absolute;
+  display: none;
+}
+.carousel-preview.active {
+  display: block;
+}
+.carousel-preview-bg {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(34, 34, 34, 0.9);
+}
+.carousel-preview-img {
+  position: fixed;
+  z-index: 21;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 body {
   display: grid;
   grid-template-rows: 150px 1fr 400px;
   gap: 10px;
+}
+
+.main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.main-content {
+  width: 100%;
+}
+
+.topnav-content, .nav-content, .main-content, .footer-content {
+  max-width: 1596px;
 }

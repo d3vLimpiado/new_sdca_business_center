@@ -2,7 +2,7 @@
 <?php include('../template/header.php'); ?>
 
 <!-- All contents should be enclosed or put into this element. -->
-<main>
+<main class="mainContent">
   CONTENT HERE
 </main>
 
