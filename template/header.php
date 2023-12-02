@@ -18,32 +18,36 @@
 <body>
   <header class="headerPrimary">
     <div class="topnav">
-      <div class="logo">
-        <div class="logoContainer">
-          <img src="<?php echo $url ?>assets/images/business_center_logo.png" alt="SDCA Business Center Logo" />
+      <div class="topnav-content">
+        <div class="logo">
+          <div class="logoContainer">
+            <img src="<?php echo $url ?>assets/images/business_center_logo.png" alt="SDCA Business Center Logo" />
+          </div>
+          <span class="logoTitle">SDCA Business Center</span>
         </div>
-        <span class="logoTitle">SDCA Business Center</span>
-      </div>
-      <div class="searchBar">
-        <input class="searchBarInput" />
-        <i class="searchBarIcon"></i>
-      </div>
-      <div class="user">
-        <div class="userCart">
-          <i class="userCartIcon"></i>
-          <span class="userCartText">Cart</span>
+        <div class="searchBar">
+          <input class="searchBarInput" />
+          <i class="searchBarIcon"></i>
         </div>
-        <div class="userSec">
-          <i class="userSecIcon"></i>
-          <span class="userSecText">Login</span>
+        <div class="user">
+          <div class="userCart">
+            <i class="userCartIcon"></i>
+            <span class="userCartText">Cart</span>
+          </div>
+          <div class="userSec">
+            <i class="userSecIcon"></i>
+            <span class="userSecText">Login</span>
+          </div>
         </div>
       </div>
     </div>
     <nav class="nav">
-      <a href="<?php echo $url ?>" class="nav-link">Home</a>
-      <a href="<?php echo $url ?>pages/feature.php" class="nav-link">Books</a>
-      <a href="<?php echo $url ?>pages/uniforms.php" class="nav-link">School Uniforms</a>
-      <a href="<?php echo $url ?>pages/supplies.php" class="nav-link">School Supplies</a>
-      <a href="<?php echo $url ?>pages/support.php" class="nav-link">Customer Support</a>
+      <div class="nav-content">
+        <a href="<?php echo $url ?>" class="nav-content-link">Home</a>
+        <a href="<?php echo $url ?>pages/feature.php" class="nav-content-link">Books</a>
+        <a href="<?php echo $url ?>pages/uniforms.php" class="nav-content-link">School Uniforms</a>
+        <a href="<?php echo $url ?>pages/supplies.php" class="nav-content-link">School Supplies</a>
+        <a href="<?php echo $url ?>pages/support.php" class="nav-content-link">Customer Support</a>
+      </div>
     </nav>
   </header>

@@ -3,8 +3,24 @@
 @use "./nav";
 @use "./footer";
 
+@use "./carousel";
+
 body {
   display: grid;
   grid-template-rows: 150px 1fr 400px;
   gap: 10px;
+}
+
+.main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+  &-content {
+    width: 100%;
+  }
+}
+
+.topnav-content, .nav-content, .main-content, .footer-content {
+  max-width: 1596px;
 }
