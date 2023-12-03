@@ -4,10 +4,11 @@
 @use "./footer";
 
 @use "./carousel";
+@use "./home_featured";
 
 body {
   display: grid;
-  grid-template-rows: 150px 1fr 400px;
+  grid-template-rows: 1fr 400px;
   gap: 10px;
 }
 
@@ -15,6 +16,8 @@ body {
   width: 100%;
   display: grid;
   place-items: center;
+
+  margin-top: 160px;
 
   &-content {
     width: 100%;

@@ -19,12 +19,12 @@
   <header class="headerPrimary">
     <div class="topnav">
       <div class="topnav-content">
-        <div class="logo">
+        <a href="<?php echo $url; ?>" class="logo">
           <div class="logoContainer">
             <img src="<?php echo $url ?>assets/images/business_center_logo.png" alt="SDCA Business Center Logo" />
           </div>
           <span class="logoTitle">SDCA Business Center</span>
-        </div>
+        </a>
         <div class="searchBar">
           <input class="searchBarInput" />
           <i class="searchBarIcon"></i>
