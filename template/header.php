@@ -9,11 +9,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="<?php echo $url ?>styles/style.css" />
-  <title>SDCA Business Center<?php  
-  if (strlen($pageTitle)) {
-    echo " | " . $pageTitle;
-  }
-  ?></title>
+  <title>SDCA Business Center</title>
 </head>
 <body>
   <header class="headerPrimary">
@@ -30,14 +26,14 @@
           <i class="searchBarIcon"></i>
         </div>
         <div class="user">
-          <div class="userCart">
+          <a href="<?php echo $url; ?>pages/cart.php" class="userCart">
             <i class="userCartIcon"></i>
             <span class="userCartText">Cart</span>
-          </div>
-          <div class="userSec">
+          </a>
+          <a href="#" class="userSec">
             <i class="userSecIcon"></i>
-            <span class="userSecText">Login</span>
-          </div>
+            <span class="userSecText">User</span>
+          </a>
         </div>
       </div>
     </div>
