@@ -110,9 +110,36 @@
   }
 
   &Sec {
+    position: relative;
+    color: var(--color_light);
 
     &Icon {
       background-image: url("../assets/icons/user.svg");
+    }
+
+    
+    &-dropdown {
+      position: absolute;
+      bottom: -80px;
+      right: 0;
+      width: 100px;
+      height: 80px;
+      background-color: var(--color_light);
+      text-align: right;
+      padding: 10px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      a {
+        color: var(--color_dark);
+        &:hover {
+          color: var(--color_primary);
+        }
+      }
+    }
+
+    &:hover  &-dropdown {
+      display: flex;
     }
   }
 }

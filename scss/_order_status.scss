@@ -1,0 +1,131 @@
+.order-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 40px;
+
+  &-progress {
+    margin: 30px 0;
+    position: relative;
+    max-width: 955px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    i {
+      width: 50px;
+      height: 50px;
+      background-position: center center;
+      background-color: var(--color_primary);
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
+      border-radius: 50px;
+    }
+
+    &-processing {
+      background-image: url("../assets/icons/shopping-cart-check.svg");  
+    }
+    &-payment {
+      background-image: url("../assets/icons/credit-card.svg");  
+    }
+    &-prepared {
+      background-image: url("../assets/icons/shopping-bag.svg");  
+    }
+    &-claimed {
+      background-image: url("../assets/icons/package.svg");  
+    }
+    &-completed {
+      background-image: url("../assets/icons/thumbs-up.svg");  
+    }
+
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: -950px;
+      transform: translateY(-50%);
+      background-color: var(--color_primary);
+      width: inherit;
+      height: 10px;
+    }
+
+    &[data-progress-status='1'] {
+      &::after {
+        left: -700px;
+      }
+    }
+    &[data-progress-status='2'] {
+      &::after {
+        left: -470px;
+      }
+    }
+    &[data-progress-status='3'] {
+      &::after {
+        left: -260px;
+      }
+    }
+    &[data-progress-status='4'] {
+      &::after {
+        left: 0;
+      }
+    }
+  }
+
+  &-product {
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid var(--color_dark_30);
+
+    th, td {
+      text-align: center;
+      padding: 10px 0;
+
+      &:first-child {
+        text-align: left;
+        width: 60%;
+      }
+
+      &:nth-child(2), &:last-child {
+        width: 40%;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    &-item {
+      &-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img {
+          width: auto;
+          height: 100px;
+        }
+
+        &-details {
+          h3 {
+            font-size: 25px;
+            font-weight: 400;
+          }
+
+          p {
+            font-size: 15px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  &-subtotal {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}

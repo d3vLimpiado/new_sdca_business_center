@@ -60,7 +60,7 @@ if(carouselImgs.length) {
 
 // For Cart Page
 const cartItems = document.getElementsByClassName("cart-content-table-items-item");
-const noItemTr = document.querySelector(".cart-content-table-items-no")
+const cartTable = document.querySelector(".cart-content-table")
 
 if(cartItems.length) {
   const cartTbody = document.querySelector('.cart-content-table-items');
@@ -74,8 +74,7 @@ if(cartItems.length) {
     qtyTdChildrens[1].addEventListener('click', () => {
       cartTbody.removeChild(cartItem)
       if(cartTbody.children.length === 1) {
-        noItemTr.style.display = "table-row";
-        console.log('display none')
+        cartTable.setAttribute("data-cart-table", "no-items")
       }
     })
     // VALUE
@@ -96,7 +95,6 @@ if(cartItems.length) {
 }
 
 // For checkout modal
-
 const sdcaModal = document.querySelector(".sdca-modal");
 const termsConditionCheckbox = document.getElementById("termscondition")
 
@@ -119,10 +117,6 @@ if(sdcaModal && termsConditionCheckbox) {
     termsConditionCheckbox.checked = false;
     sdcaModal.classList.remove("open");
   })
-
-  if(termsConditionCheckbox.checked) {
-    termsConditionCheckbox.removeEventListener("click", )
-  }
 }
 
 // Product Page increment and decrement page
@@ -160,6 +154,6 @@ if(sizechartbtn && productModal && productModelBg) {
     }
   }
 
-  const increase = document.getElementById("increase").addEventListener("click", increment);
-  const decrease = document.getElementById("decrease").addEventListener("click", decrement);
+  document.getElementById("increase").addEventListener("click", increment);
+  document.getElementById("decrease").addEventListener("click", decrement);
 }

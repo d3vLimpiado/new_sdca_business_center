@@ -9,6 +9,8 @@
 @use "./cart";
 @use "./checkout";
 @use "./products";
+@use "./orders";
+@use "./order_status";
 
 body {
   display: grid;

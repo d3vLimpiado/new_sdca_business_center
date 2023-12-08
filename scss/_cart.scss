@@ -118,6 +118,10 @@
       }
     }
   }
+
+  &[data-cart-table="no-items"] &-items-no {
+    display: table-row;
+  }
 }
 
 .cart-content-breakout {
