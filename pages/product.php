@@ -12,17 +12,30 @@
       <div class="left-container">
         <div class="left-inner-container">
           <div class="product-and-model-container">
-            <div class="model-container">
-              <img src="<?php echo $url ?>assets/images/products/model-1-front.png" class="main-product-model" alt="red-shirt">
-              <img src="<?php echo $url ?>assets/images/products/model-2-back.png" class="main-product-model" alt="red-shirt">
-              <img src="<?php echo $url ?>assets/images/products/model-3-face.png" class="main-product-model" alt="red-shirt">
+            <div class="model-container" data-active-model="1">
+              <img src="<?php echo $url ?>assets/images/products/model-1.1.png" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-1.2.png" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-1.3.png" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-1.4.png" class="main-product-model" alt="red-shirt">
             </div>
+            <!-- <div class="model-container" data-active-model="0">
+              <img src="<?php echo $url ?>assets/images/products/model-2.1.png" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-2.2.jpg" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-2.3.jpg" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-2.4.png" class="main-product-model" alt="red-shirt">
+            </div>
+            <div class="model-container" data-active-model="0">
+              <img src="<?php echo $url ?>assets/images/products/model-3.1.jpg" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-3.2.jpg" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-3.3.jpg" class="main-product-model" alt="red-shirt">
+              <img src="<?php echo $url ?>assets/images/products/model-3.4.webp" class="main-product-model" alt="red-shirt">
+            </div> -->
             <img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="main-product" alt="red-shirt">
           </div>
           <div class="options-container">
-            <a href=""><img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt"></a>
-            <a href=""><img src="<?php echo $url ?>assets/images/products/blue-shirt.png" class="option-items" alt="red-shirt"></a>
-            <a href=""><img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt"></a>
+            <img  src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt">
+            <img  src="<?php echo $url ?>assets/images/products/blue-shirt.png" class="option-items" alt="red-shirt">
+            <img  src="<?php echo $url ?>assets/images/products/white-shirt.png" class="option-items" alt="red-shirt">
           </div>
         </div>
       </div>

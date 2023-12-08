@@ -179,4 +179,26 @@ if(sizechartbtn && sizeChartModal && sizeChartModalBg) {
       this.className += " active";
     });
   }
+
+  let optionItems = document.querySelectorAll('.option-items');
+  if(optionItems.length) {
+    optionItems.forEach(function(item) {
+      item.addEventListener('click', function(event) {
+          let currentSource = event.target.src;
+          const mainProduct = document.querySelector('.main-product');
+          mainProduct.src = currentSource;
+      });
+    });
+  }
+
+  let optionItemsModel = document.querySelectorAll('.main-product-model');
+  if(optionItemsModel.length) {
+    optionItemsModel.forEach(function(item) {
+      item.addEventListener('click', function(event) {
+          let currentSource = event.target.src;
+          const mainProduct = document.querySelector('.main-product');
+          mainProduct.src = currentSource;
+      });
+    });
+  }
 }

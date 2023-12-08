@@ -22,14 +22,22 @@
 
           .main-product-model {
             height: 121px;
-            width: 108px;
+            width: auto;
+            border-radius: 15px;
           }
+        }
+        &[data-active-model="0"] {
+          display: none;
+        }
+        &[data-active-model="1"] {
+          display: inline-block;
         }
       }
 
       .options-container {
         display: flex;
         justify-content: center;
+        margin-top: 50px;
 
         .option-items {
           height: 171px;
