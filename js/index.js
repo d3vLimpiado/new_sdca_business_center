@@ -180,3 +180,22 @@ if(sizechartbtn && sizeChartModal && sizeChartModalBg) {
     });
   }
 }
+
+let optionItems = document.querySelectorAll('.option-items');
+optionItems.forEach(function(item) {
+  item.addEventListener('click', function(event) {
+      let currentSource = event.target.src;
+      const mainProduct = document.querySelector('.main-product');
+      mainProduct.src = currentSource;
+  });
+});
+
+let optionItemsModel = document.querySelectorAll('.main-product-model');
+optionItemsModel.forEach(function(item) {
+  item.addEventListener('click', function(event) {
+      let currentSource = event.target.src;
+      const mainProduct = document.querySelector('.main-product');
+      mainProduct.src = currentSource;
+      return mainProduct;
+  });
+});
