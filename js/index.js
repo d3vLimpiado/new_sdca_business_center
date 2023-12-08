@@ -119,18 +119,21 @@ if(sdcaModal && termsConditionCheckbox) {
   })
 }
 
-// Product Page increment and decrement page
+// Product Page prompt, increment and decrement page
+const sizeChartModal = document.querySelector(".size-chart");
+const promptModal = document.querySelector(".prompt-message");
+const productModalBg = document.querySelector(".sdca-modal-bg");
+const promptModelBg = document.querySelector(".sdca-modal-bg");
 const sizechartbtn = document.querySelector('.size-chart-text')
-const productModal = document.querySelector(".sdca-modal");
-const productModelBg = document.querySelector(".sdca-modal-bg");
+const checkoutbtn = document.querySelector('.checkout');
 
-if(sizechartbtn && productModal && productModelBg) {
+if(sizechartbtn && sizeChartModal && productModalBg) {
   sizechartbtn.addEventListener('click', () => {
-    productModal.classList.add("open");
+    sizeChartModal.classList.add("open");
   })
 
-  productModelBg.addEventListener("click", () => {
-    productModal.classList.remove("open");
+  productModalBg.addEventListener("click", () => {
+    sizeChartModal.classList.remove("open");
   })
 
   const inputQty = document.getElementById("count");
@@ -147,13 +150,35 @@ if(sizechartbtn && productModal && productModelBg) {
 
   const decrement = () => {
     count --;
-    if(count >= 1) {
+    if(count > 1) {
       inputQty.value = count;
     } else {
-      count = parseInt(inputQty.innerHTML || 0);
+      count = parseInt(inputQty.innerHTML || count < 0);
     }
   }
 
   document.getElementById("increase").addEventListener("click", increment);
   document.getElementById("decrease").addEventListener("click", decrement);
+}
+
+if(checkoutbtn && promptModal && productModalBg) {
+  checkoutbtn.addEventListener('click', () => {
+    promptModal.classList.add("open");
+  })
+
+  promptModelBg.addEventListener("click", () => {
+    promptModal.classList.remove("open");
+  })
+}
+
+let productSize = document.getElementsByClassName("product-sizing-container")[0];
+let btnSize = productSize.getElementsByClassName("product-item");
+for (var i = 0; i < btnSize.length; i++) {
+  btnSize[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active");
+    if(current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+  });
 }

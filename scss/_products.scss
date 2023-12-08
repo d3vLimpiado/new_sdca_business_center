@@ -19,6 +19,7 @@
         .model-container {
           height: 100%;
           width: 108px;
+
           .main-product-model {
             height: 121px;
             width: 108px;
@@ -86,8 +87,7 @@
           text-decoration: none;
           font-size: 20px;
         }
-
-        .product-item:hover {
+        .active, .product-item:hover {
           background-color: var(--color_primary);
           color: var(--color_light);
         }
@@ -105,6 +105,7 @@
         margin-top: 40px;
 
         .quantity-border {
+          cursor: pointer;
           height: 40px;
           width: 40px;
           border: 1px solid var(--color_dark);
@@ -129,6 +130,7 @@
 
         .size-chart-text {
           color: var(--color_dark);
+          text-decoration: underline;
         }
 
         .stocks-text {
@@ -139,6 +141,7 @@
       .add-to-cart-and-checkout-container {
         display: flex;
         margin-top: 40px;
+
         a {
           text-decoration: none;
         }
@@ -159,23 +162,86 @@
       .details-container {
         text-align: justify;
         margin-top: 15px;
+
         .details-text {
           font-size: 30px;
           font-weight: 700;
           color: var(--color_dark);
         }
       }
-      .details-container > * {
+
+      .details-container>* {
         margin-top: 20px;
       }
     }
 
-    .right-container > * {
+    .right-container>* {
       margin-top: 40px;
     }
   }
 }
 
-.size-chart {
-  background-color: red;
+.size-chart-pop-up-container {
+  background-color: var(--color_light);
+  height: 700px;
+  width: 1000px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  .left-size-container {
+    display: flex;
+    align-items: center;
+    .pop-up-inner-container {
+      background-color: var(--color_gray);
+      height: 350px;
+      width: auto;
+      border-radius: 15px;
+      margin-left: 10px;
+    }
+  
+    tr>td,
+    th {
+      height: 50px;
+      width: 130px;
+    }
+  
+    tr:nth-child(even) {
+      background-color: var(--color_light);
+    }
+  
+    tr th:first-child,
+    tr td:first-child {
+      font-weight: bold;
+    }
+  }
+  .right-size-container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    .polo-sizing {
+      height: 450px;
+      width: auto;
+      margin-right: 10px;
+    }
+  }
+}
+
+.prompt-message-container {
+  height: 90px;
+  width: 1660px;
+  background-color: var(--color_orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  .prompt-icon {
+    height: 53px;
+    width: auto;
+  }
+  .caution-text {
+    font-weight: bold;
+  }
 }
