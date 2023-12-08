@@ -124,3 +124,42 @@ if(sdcaModal && termsConditionCheckbox) {
     termsConditionCheckbox.removeEventListener("click", )
   }
 }
+
+// Product Page increment and decrement page
+const sizechartbtn = document.querySelector('.size-chart-text')
+const productModal = document.querySelector(".sdca-modal");
+const productModelBg = document.querySelector(".sdca-modal-bg");
+
+if(sizechartbtn && productModal && productModelBg) {
+  sizechartbtn.addEventListener('click', () => {
+    productModal.classList.add("open");
+  })
+
+  productModelBg.addEventListener("click", () => {
+    productModal.classList.remove("open");
+  })
+
+  const inputQty = document.getElementById("count");
+  let count = parseInt(inputQty.innerHTML || 0);
+
+  const increment = () => {
+    count ++;
+    if(count <= 99) {
+      inputQty.value = count;
+    } else {
+      count = parseInt(inputQty.innerHTML || 0);
+    }
+  }  
+
+  const decrement = () => {
+    count --;
+    if(count >= 1) {
+      inputQty.value = count;
+    } else {
+      count = parseInt(inputQty.innerHTML || 0);
+    }
+  }
+
+  const increase = document.getElementById("increase").addEventListener("click", increment);
+  const decrease = document.getElementById("decrease").addEventListener("click", decrement);
+}
