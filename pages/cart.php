@@ -34,7 +34,7 @@
                 <div class="cart-item-qty-cont-item">2</div>
                 <button class="cart-item-qty-cont-item">-</button>
               </div>
-              <button class="cart-item-qty-remove">Remove</button>
+              <button class="sdca-button-primary cart-item-qty-remove">Remove</button>
             </td>
             <td class="cart-item-price">Php 1,000</td>
           </tr>
@@ -54,7 +54,7 @@
                 <button class="cart-item-qty-cont-item">2</button>
                 <button class="cart-item-qty-cont-item">-</button>
               </div>
-              <button class="cart-item-qty-remove">Remove</button>
+              <button class="sdca-button-primary cart-item-qty-remove">Remove</button>
             </td>
             <td class="cart-item-price">Php 1,000</td>
           </tr>
@@ -74,7 +74,7 @@
                 <button class="cart-item-qty-cont-item">2</button>
                 <button class="cart-item-qty-cont-item">-</button>
               </div>
-              <button class="cart-item-qty-remove">Remove</button>
+              <button class="sdca-button-primary cart-item-qty-remove">Remove</button>
             </td>
             <td class="cart-item-price">Php 1,000</td>
           </tr>
@@ -85,7 +85,7 @@
           <span class="cart-content-breakout-total-text">Total</span>
           <span class="cart-content-breakout-total-val">Php 1,000</span>
         </div>
-        <button class="cart-content-breakout-checkout">Proceed to checkout</button>
+        <a href="<?php echo $url;?>pages/checkout.php" class="sdca-button-primary cart-content-breakout-checkout">Proceed to checkout</a>
       </div>
     </div>
   </div>
