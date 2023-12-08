@@ -6,7 +6,8 @@
   <div class="main-content">
     <h1 class="cart-page-title">Cart</h1>
     <div class="cart-content">
-      <table class="cart-content-table">
+      <!-- <table class="cart-content-table" data-cart-table="no-items"> -->
+      <table class="cart-content-table" data-cart-table="">
         <thead>
           <tr>
             <th class="header-product">Product</th>

@@ -30,10 +30,14 @@
             <i class="userCartIcon"></i>
             <span class="userCartText">Cart</span>
           </a>
-          <a href="#" class="userSec">
+          <div href="#" class="userSec">
             <i class="userSecIcon"></i>
             <span class="userSecText">User</span>
-          </a>
+            <div class="userSec-dropdown">
+              <a href="#">Login</a>
+              <a href="<?php echo $url;?>pages/orders.php">Orders</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

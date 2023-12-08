@@ -76,7 +76,7 @@
         <img class="feature-bg" src="<?php echo $url;?>/assets/images/students.png" />
         <span>Featured</span>
         <h1 class="feature-title">SCHOOL UNIFORMS</h1>
-        <button class="sdca-button-primary feature-btn">View All</button>
+        <a href="<?php echo $url; ?>pages/products.php" class="sdca-button-primary feature-btn">View All</a>
       </div>
       <div class="feature-cards">
         <div class="feature-cards-card">
@@ -116,7 +116,7 @@
         <img class="feature-bg" src="<?php echo $url;?>/assets/images/school_supplies.jpg" />
         <span>Featured</span>
         <h1 class="feature-title">SCHOOL SUPPLIES</h1>
-        <button class="sdca-button-primary feature-btn">View All</button>
+        <a href="<?php echo $url; ?>pages/products.php" class="sdca-button-primary feature-btn">View All</a>
       </div>
       <div class="feature-cards">
         <div class="feature-cards-card">
