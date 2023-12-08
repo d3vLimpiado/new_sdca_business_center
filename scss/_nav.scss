@@ -1,5 +1,6 @@
 .headerPrimary {
-  position: sticky;
+  width: 100%;
+  position: fixed;
   z-index: 20;
   top: 0;
   left: 0;
@@ -21,6 +22,7 @@
 }
 
 .logo {
+  text-decoration: none;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -84,7 +86,9 @@
   gap: 70px;
   justify-content: flex-end;
 
-  color: var(--color_light);
+  a {
+    color: var(--color_light);
+  }
 
   i {
     width: 24px;

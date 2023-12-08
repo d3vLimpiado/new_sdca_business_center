@@ -3,8 +3,8 @@
 
 <!-- All contents should be enclosed or put into this element. -->
 <main class="main">
-  <!-- MAIN CAROUSEL | HERO CAROUSEL -->
   <div class="main-content">
+    <!-- MAIN CAROUSEL | HERO CAROUSEL -->
     <div class="carousel">
       <div class="carousel-cont">
         <!-- Modify this to edit or make the carousel image dynamic -->
@@ -28,6 +28,127 @@
       </div>
       <div class="carousel-preview">
         <div class="carousel-preview-bg"></div>
+      </div>
+    </div>
+    <!-- FEATURED CONTENTS -->
+    <div class="feature">
+      <div class="feature-title-cont">
+        <img class="feature-bg" src="<?php echo $url;?>/assets/images/books.jpg" />
+        <span>Featured</span>
+        <h1 class="feature-title">BOOKS</h1>
+        <a href="<?php echo $url; ?>pages/products.php" class="sdca-button-primary feature-btn">View All</a>
+      </div>
+      <div class="feature-cards">
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-title-cont">
+        <img class="feature-bg" src="<?php echo $url;?>/assets/images/students.png" />
+        <span>Featured</span>
+        <h1 class="feature-title">SCHOOL UNIFORMS</h1>
+        <button class="sdca-button-primary feature-btn">View All</button>
+      </div>
+      <div class="feature-cards">
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-title-cont">
+        <img class="feature-bg" src="<?php echo $url;?>/assets/images/school_supplies.jpg" />
+        <span>Featured</span>
+        <h1 class="feature-title">SCHOOL SUPPLIES</h1>
+        <button class="sdca-button-primary feature-btn">View All</button>
+      </div>
+      <div class="feature-cards">
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
+        <div class="feature-cards-card">
+          <div class="feature-cards-card-img-container">
+            <img src="<?php echo $url;?>assets/images/placeholder.png" alt="Feature Card Image" />
+          </div>
+          <div class="feature-cards-card-desc">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
+          </div>
+          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+        </div>
       </div>
     </div>
   </div>

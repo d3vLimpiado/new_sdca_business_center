@@ -13,7 +13,7 @@
       <div class="footer-content-about">
         <h3 class="footer-content-about-title">About</h3>
         <p class="footer-content-about-desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dignissimos perferendis temporibus, omnis harum rerum. Voluptates laudantium, nulla quas commodi earum pariatur a exercitationem, veniam fuga error tempora facere sapiente quasi sed vero culpa quaerat provident labore. Magnam rem tempora, adipisci sed maiores labore dolore architecto minus quam! Et, aliquam hic exercitationem ratione officia aut incidunt nemo quibusdam soluta natus est laborum ut obcaecati! Illo distinctio explicabo numquam dolore fuga porro necessitatibus soluta, maxime omnis sint? Accusamus corporis consequatur officia ratione cumque atque sint unde, non consectetur ab, ea facilis placeat ducimus reiciendis repudiandae natus fuga. Nam quisquam ipsa sequi!
+        The SDCA Business Center, nestled on campus, serves as the pulse of academic readiness. It's not just a place to acquire supplies and uniforms; it's a nexus of excellence. Offering top-tier school essentials and impeccably tailored uniforms, the Business Center exemplifies SDCA's pledge to empower students for success. Seamlessly integrated into vibrant campus life, it ensures each student has the tools to thrive in their educational journey.
         </p>
       </div>
       <div class="footer-content-social">
