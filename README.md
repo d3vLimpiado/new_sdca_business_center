@@ -4,6 +4,10 @@
 
 ---
 
+### This is best in screen 1920 x 1020 where it is the design layout in FIGMA.
+
+---
+
 # SDCA Business Center
 
 ### IMPORTANT PARTS ARE THE FOLLOWING:
