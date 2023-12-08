@@ -14,6 +14,13 @@
         <i class="order-status-progress-claimed"></i>
         <i class="order-status-progress-completed"></i>
       </div>
+      <div class="order-status-progress-label">
+        <p>Order Processed</p>
+        <p>Payment Confirmed</p>
+        <p>Order prepared</p>
+        <p>Order to be claimed</p>
+        <p>Order Complete</p>
+      </div>
       <table class="order-status-product">
         <thead>
           <tr>
