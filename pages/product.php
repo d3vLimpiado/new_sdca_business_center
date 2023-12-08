@@ -35,7 +35,7 @@
           <div class="options-container">
             <img  src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt">
             <img  src="<?php echo $url ?>assets/images/products/blue-shirt.png" class="option-items" alt="red-shirt">
-            <img  src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt">
+            <img  src="<?php echo $url ?>assets/images/products/white-shirt.png" class="option-items" alt="red-shirt">
           </div>
         </div>
       </div>
