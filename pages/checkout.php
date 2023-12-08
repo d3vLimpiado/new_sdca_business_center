@@ -4,7 +4,7 @@
 <!-- All contents should be enclosed or put into this element. -->
 <main class="main">
   <div class="main-content">
-    <a href="<?php echo $url; ?>pages/cart.php">Go back</a>
+    <a href="javascript:history.back()">Go back</a>
     <h1>Billing</h1>
     <form action="#" class="form-billing">
       <div class="sdca-card form-billing-info">

@@ -47,7 +47,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
         <div class="feature-cards-card">
           <div class="feature-cards-card-img-container">
@@ -57,7 +57,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
         <div class="feature-cards-card">
           <div class="feature-cards-card-img-container">
@@ -67,7 +67,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
         <div class="feature-cards-card">
           <div class="feature-cards-card-img-container">
@@ -97,7 +97,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
         <div class="feature-cards-card">
           <div class="feature-cards-card-img-container">
@@ -107,7 +107,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
       </div>
     </div>
@@ -127,7 +127,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
         <div class="feature-cards-card">
           <div class="feature-cards-card-img-container">
@@ -137,7 +137,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
         <div class="feature-cards-card">
           <div class="feature-cards-card-img-container">
@@ -147,7 +147,7 @@
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati non porro quia fuga quam, provident repudiandae? Assumenda deserunt ea nobis neque voluptates quod ipsam iure, quisquam dicta unde ex nulla obcaecati? Accusamus sit eius cupiditate commodi numquam natus alias consequuntur, eos sequi voluptate obcaecati facere beatae, iusto adipisci voluptas?</p>
           </div>
-          <button class="sdca-button-primary feature-cards-card-btn">View</button>
+          <a href="<?php echo $url;?>pages/product.php" class="sdca-button-primary feature-cards-card-btn">View</a>
         </div>
       </div>
     </div>
