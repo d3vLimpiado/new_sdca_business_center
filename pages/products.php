@@ -17,7 +17,7 @@
               <img src="<?php echo $url ?>assets/images/products/model-2-back.png" class="main-product-model" alt="red-shirt">
               <img src="<?php echo $url ?>assets/images/products/model-3-face.png" class="main-product-model" alt="red-shirt">
             </div>
-              <img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="main-product" alt="red-shirt">
+            <img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="main-product" alt="red-shirt">
           </div>
           <div class="options-container">
             <a href=""><img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt"></a>
@@ -47,24 +47,51 @@
             <input type="text" class="quantity-border" id="count" min="1" max="99" minlength="1" maxlength="2" value="1" />
             <div href="" class="quantity-border" id="increase"><img alt="add-icon" src="<?php echo $url; ?>assets/icons/products-icon/increase-icon.svg" /></div>
             <span class="size-chart-container">
-              <a href="#" class="size-chart-text"><span>Size Chart</span></a>
+              <a href="#" id="checkout" class="size-chart-text"><span>Size Chart</span></a>
             </span>
             <span><span>5</span><span class="stocks-text">stocks available</span></span>
           </div>
           <div class="add-to-cart-and-checkout-container">
             <a class="sdca-button-primary add-to-cart" href="">Add to cart</a>
-            <a class="sdca-button-primary checkout" href="">Checkout</a>
+            <a href="#" class="checkout sdca-button-primary">Checkout</a>
           </div>
           <div class="details-container">
             <p class="details-text">Details</p>
             <p class="details-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed mollis tellus. In scelerisque risus nec viverra finibus. Mauris tempus odio in quam volutpat finibus. Donec ac placerat orci, at gravida augue. Ut quis diam magna. Pellentesque urna arcu, euismod in lorem vel, convallis vehic.</p>
           </div>
-          <div class="sdca-modal">
+          <div class="sdca-modal size-chart">
             <div class="sdca-modal-bg"></div>
             <div class="sdca-modal-custom-container">
-              <div class="size-chart">
-                emememememe
+              <div class="size-chart-pop-up-container">
+                <div class="left-size-container">
+                <table class="pop-up-inner-container">
+                  <tr><th>Size</th><th>Chest</th><th>Waist</th><th>Arms Length</th></tr>
+                  <tr><td>XS</td><td>35"</td><td>31"</td><td>10.5"</td></tr>
+                  <tr><td>S</td><td>33"</td><td>33"</td><td>11"</td></tr>
+                  <tr><td>M</td><td>39"</td><td>35"</td><td>11.5"</td></tr>
+                  <tr><td>L</td><td>41"</td><td>37"</td><td>12"</td></tr>
+                  <tr><td>XL</td><td>43"</td><td>39"</td><td>12.5"</td></tr>
+                  <tr><td>2XL</td><td>45"</td><td>41"</td><td>13"</td></tr>
+                  <tr><td>3XL</td><td>45"</td><td>41"</td><td>13"</td></tr>
+                  <tr><td>4XL</td><td>47"</td><td>43"</td><td>13.5"</td></tr>
+                  <tr><td>5XL</td><td>49"</td><td>45"</td><td>14"</td></tr>
+                  <tr><td>Special</td><td>51"</td><td>47"</td><td>14.5"</td></tr>
+                </table>
+                </div>
+                <div class="right-size-container">
+                  <img src="<?php echo $url ?>assets/images/products/polo.png" class="polo-sizing" alt="polo-shirt">
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="sdca-modal prompt-message">
+          <div class="sdca-modal-bg"></div>
+            <div class="sdca-modal-custom-container">
+            <div class="prompt-message-container">
+              <span><img alt="exclamation-icon" class="prompt-icon" src="<?php echo $url; ?>assets/icons/products-icon/exclamation-icon.svg" /></span>
+              <span class="caution-text">CAUTION!</span>
+              <span>Please review and confirm your item within the next 30 minutes. Failure to do so will result in the item being automatically removed from your cart.</span>
+            </div>
             </div>
           </div>
         </div>
