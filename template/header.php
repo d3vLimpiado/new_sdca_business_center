@@ -44,9 +44,9 @@
     <nav class="nav">
       <div class="nav-content">
         <a href="<?php echo $url ?>" class="nav-content-link">Home</a>
-        <a href="<?php echo $url ?>pages/products-page.php" class="nav-content-link">Books</a>
-        <a href="<?php echo $url ?>pages/products-page.php" class="nav-content-link">School Uniforms</a>
-        <a href="<?php echo $url ?>pages/products-page.php" class="nav-content-link">School Supplies</a>
+        <a href="<?php echo $url ?>pages/products.php" class="nav-content-link">Books</a>
+        <a href="<?php echo $url ?>pages/products.php" class="nav-content-link">School Uniforms</a>
+        <a href="<?php echo $url ?>pages/products.php" class="nav-content-link">School Supplies</a>
         <a href="<?php echo $url ?>pages/support.php" class="nav-content-link">Customer Support</a>
       </div>
     </nav>
