@@ -2,6 +2,86 @@
 :root {
   --color_primary: #720F11;
   --color_dark: #222222;
+  --color_dark_30: rgba(34, 34, 34, 0.30);
   --color_dark2: #272432;
   --color_light: #FFFFFF;
+}
+
+// GLOBAL CLASSNAMES
+.sdca {
+  &-button {
+    cursor: pointer;
+    
+    text-align: center;
+    text-decoration: none;
+    color: var(--color_dark);
+    background-color: transparent;
+    
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--color_primary);
+
+    &-primary {
+      @extend .sdca-button;
+      border: none;
+      background-color: var(--color_primary);
+      color: var(--color_light);
+      &-disabled {
+        @extend .sdca-button-disabled;
+      }
+    }
+    
+    &-disabled {
+      @extend .sdca-button;
+      opacity: 0.9;
+      cursor: not-allowed;
+    }
+
+  }
+
+  &-card {
+    border: 1px solid var(--color_dark_30);
+    padding: 10px;
+  }
+
+  &-input {
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--color_dark_30);
+    outline: none;
+  }
+
+  &-modal {
+    display: none;
+    position: relative;
+    z-index: 20;
+
+    &.open {
+      @extend .sdca-modal;
+      display: block;
+    }
+
+    &-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--color_dark);
+      opacity: 0.6;
+    }
+
+    &-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 750px;
+      height: 780px;
+
+      background-color: var(--color_light);
+      border-radius: 5px;
+    }
+  }
 }

@@ -94,3 +94,33 @@ if(cartItems.length) {
     })
   })
 }
+
+// For checkout modal
+
+const sdcaModal = document.querySelector(".sdca-modal");
+const termsConditionCheckbox = document.getElementById("termscondition")
+
+if(sdcaModal && termsConditionCheckbox) {
+  termsConditionCheckbox.addEventListener('click', () => {
+    termsConditionCheckbox.checked = false;
+    sdcaModal.classList.add("open");
+  })
+
+  const checkoutModalBtnGroup = document.querySelector(".checkout-modal-content-button-group");
+  const agreeBtn = checkoutModalBtnGroup.children[0];
+  const disagreeBtn = checkoutModalBtnGroup.children[1];
+
+  agreeBtn.addEventListener("click", () => {
+    termsConditionCheckbox.checked = true;
+    sdcaModal.classList.remove("open");
+  })
+
+  disagreeBtn.addEventListener("click", () => {
+    termsConditionCheckbox.checked = false;
+    sdcaModal.classList.remove("open");
+  })
+
+  if(termsConditionCheckbox.checked) {
+    termsConditionCheckbox.removeEventListener("click", )
+  }
+}

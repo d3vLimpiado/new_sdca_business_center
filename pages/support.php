@@ -64,7 +64,7 @@
           <label>Message</label>
           <textarea></textarea>
         </div>
-        <button type="submit">
+        <button class="sdca-button-primary" type="submit">
           Send
         </button>
       </form>

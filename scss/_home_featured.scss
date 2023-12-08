@@ -40,16 +40,9 @@
       width: 200px;
       height: 50px;
 
-      border: none;
-      border-radius: 5px;
-      background-color: var(--color_primary);
 
-      cursor: pointer;
-      color: var(--color_light);
       font-size: 20px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
     }
 
   }
@@ -100,17 +93,10 @@
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        cursor: pointer;
         width: 350px;
         height: 60px;
-        border: none;
-        border-radius: 10px;
-        background-color: var(--color_primary);
-        color: var(--color_light);
         font-size: 20px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
         margin: auto;
       }
     }
