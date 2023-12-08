@@ -11,6 +11,7 @@
 @use "./products";
 @use "./orders";
 @use "./order_status";
+@use "./products-page";
 
 body {
   display: grid;
