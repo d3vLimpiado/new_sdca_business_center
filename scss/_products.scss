@@ -74,6 +74,7 @@
         }
 
         .product-item {
+          cursor: pointer;
           display: inline-block;
           height: 40px;
           width: 120px;
@@ -147,16 +148,11 @@
       .checkout {
         height: 51px;
         width: 186px;
-        border: 1px solid var(--color_primary);
-        background-color: var(--color_primary);
-        color: var(--color_light);
-        display: inline-block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
         text-decoration: none;
         font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-right: 26px;
       }
 
@@ -178,4 +174,8 @@
       margin-top: 40px;
     }
   }
+}
+
+.size-chart {
+  background-color: red;
 }

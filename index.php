@@ -36,7 +36,7 @@
         <img class="feature-bg" src="<?php echo $url;?>/assets/images/books.jpg" />
         <span>Featured</span>
         <h1 class="feature-title">BOOKS</h1>
-        <button class="sdca-button-primary feature-btn">View All</button>
+        <a href="<?php echo $url; ?>pages/products.php" class="sdca-button-primary feature-btn">View All</a>
       </div>
       <div class="feature-cards">
         <div class="feature-cards-card">
