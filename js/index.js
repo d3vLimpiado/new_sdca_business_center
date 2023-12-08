@@ -55,3 +55,18 @@ previewContainerBg.addEventListener('click', () => {
   previewContainer.classList.remove("active");
   previewContainer.removeChild(document.querySelector('.carousel-preview-img'))
 })
+
+const increase = document.getElementById("increase").addEventListener("click", increment);
+const decrease = document.getElementById("decrease").addEventListener("click", decrement);
+
+const increment = (count) => {
+  count ++;
+  document.getElementById("count").innerHTML = count;
+  return count;
+}
+
+const decrement = (count) => {
+  count --;
+  document.getElementById("count").innerHTML = count;
+  return count;
+}
