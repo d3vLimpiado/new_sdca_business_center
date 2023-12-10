@@ -28,7 +28,7 @@
         <tr class="order-table-item-no">
           <td colspan="5"><h2>No Items</h2></td>
         </tr>
-        <tr classname="order-table-item" data-order-row-tab-0>
+        <tr class="order-table-item" data-order-row-tab-0>
           <td class="order-table-item-col1">
             <div class="order-table-item-col1-content">
               <img src="<?php echo $url; ?>assets/images/products/pe_full.jpg" alt="item" />
