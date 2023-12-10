@@ -61,13 +61,28 @@ if(carouselImgs.length) {
 // For Cart Page
 const cartItems = document.getElementsByClassName("cart-content-table-items-item");
 const cartTable = document.querySelector(".cart-content-table")
+const checkBoxItemAll = document.querySelector("#check-item-all");
+const checkboxItems = document.querySelectorAll(".cart-item-checkbox-check")
 
-if(cartItems.length) {
+if(cartItems.length && checkBoxItemAll && checkboxItems.length) {
   const cartTbody = document.querySelector('.cart-content-table-items');
+  const selectAllBtn = document.querySelector(".remove-cont-text");
+  const removeBtn = document.querySelector('.remove-cont-btn');
+
   Array.from(cartItems).forEach((cartItem) => {
     const cartItemTr = cartItem.children
-
-    const qtyTd = cartItemTr[1].children
+    // CHECKBOX 
+    const checkBoxItem = cartItemTr[0].firstElementChild
+    checkBoxItem.addEventListener("change", () => {
+      if(checkBoxItem.checked) {
+        removeBtn.classList.remove("disabled")
+      } else {
+        removeBtn.classList.add("disabled")
+      }
+    })
+    
+    // QTY Buttons
+    const qtyTd = cartItemTr[2].children
     const qtyTdChildrens = qtyTd
     const qtyCont = qtyTdChildrens[0].children
     // REMOVE BTN
@@ -91,6 +106,46 @@ if(cartItems.length) {
         val.innerHTML = parseInt(val.innerHTML) - 1;
       }
     })
+  })
+
+  checkBoxItemAll.addEventListener('change', () => {
+    if(checkBoxItemAll.checked) {
+      checkboxItems.forEach(checkbox => {
+        checkbox.checked = true;
+      })
+      removeBtn.classList.remove("disabled")
+    } else {
+      removeBtn.classList.add("disabled")
+      checkboxItems.forEach(checkbox => checkbox.checked = false)
+    }
+
+    if(cartTbody.children.length === 1) {
+      checkBoxItemAll.click();
+    }
+  })
+
+
+  selectAllBtn.addEventListener("click", () => {
+    cartTbody.children.length !== 1 && checkBoxItemAll.click();
+  })
+
+
+  removeBtn.addEventListener('click', () => {
+    if(!removeBtn.classList.contains("disabled")) {
+      const temp = []
+      Array.from(cartTbody.children).forEach(cartItem => {
+        if(cartItem.children[0].firstElementChild.checked) {
+          temp.push(cartItem);
+        }
+      })
+      temp.forEach(item => {
+        cartTbody.removeChild(item);
+      })
+      if(cartTbody.children.length === 1) {
+        checkBoxItemAll.click();
+        cartTable.setAttribute("data-cart-table", "no-items")
+      }
+    }
   })
 }
 
@@ -123,7 +178,7 @@ if(sdcaModal && termsConditionCheckbox) {
 const sizeChartModal = document.querySelector(".size-chart");
 const sizeChartModalBg = document.querySelector(".sdca-modal-bg");
 const promptModal = document.querySelector(".prompt-message");
-const promptModalBg = promptModal.firstElementChild;
+const promptModalBg = promptModal && promptModal.firstElementChild;
 const sizechartbtn = document.querySelector('.size-chart-text')
 const checkoutbtn = document.querySelector('.add-to-cart');
 
