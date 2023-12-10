@@ -30,3 +30,13 @@ Take note of the below variable found in `template/header.php` > `$url = "/sdca_
 
 This is the variable used to locate the necessary pages, styles and assets throught the pages. Make sure to name your folder the same as in this variable or change this variable according to the projects' directory/folder name.
 
+---
+
+# CHANGES!!!
+`2023/12/10`
+- js/index.js
+- pages/cart.php
+- pages/ product.php
+- scss/_cart.scss
+- scss/_product.scss
+- style/style.css
