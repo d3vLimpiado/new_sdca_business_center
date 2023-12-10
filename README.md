@@ -34,9 +34,16 @@ This is the variable used to locate the necessary pages, styles and assets throu
 
 # CHANGES!!!
 `2023/12/10`
+## MINOR UPDATES
 - js/index.js
 - pages/cart.php
 - pages/ product.php
 - scss/_cart.scss
 - scss/_product.scss
+- style/style.css
+
+## MAJOR UPDATES - Orders Tab Development
+- pages/orders.php
+- js/index.js
+- scss/_orders.scss
 - style/style.css
