@@ -223,18 +223,20 @@ if(sizechartbtn && sizeChartModal && sizeChartModalBg) {
   document.getElementById("increase").addEventListener("click", increment);
   document.getElementById("decrease").addEventListener("click", decrement);
 
+  //For Product Size buttons
   let productSize = document.getElementsByClassName("product-sizing-container")[0];
   let btnSize = productSize.getElementsByClassName("product-item");
-  for (var i = 0; i < btnSize.length; i++) {
-    btnSize[i].addEventListener("click", function() {
+  for (let i = 0; i < btnSize.length; i++) {
+    btnSize[i].addEventListener("click", function () {
       let current = document.getElementsByClassName("active");
-      if(current.length > 0) {
+      if (current.length > 0) {
         current[0].className = current[0].className.replace(" active", "");
       }
       this.className += " active";
     });
   }
 
+  //For Optional Products Image
   let optionItems = document.querySelectorAll('.option-items');
   if(optionItems.length) {
     optionItems.forEach(function(item) {
@@ -246,14 +248,27 @@ if(sizechartbtn && sizeChartModal && sizeChartModalBg) {
     });
   }
 
-  let optionItemsModel = document.querySelectorAll('.main-product-model');
-  if(optionItemsModel.length) {
-    optionItemsModel.forEach(function(item) {
-      item.addEventListener('click', function(event) {
-          let currentSource = event.target.src;
-          const mainProduct = document.querySelector('.main-product');
-          mainProduct.src = currentSource;
+  //For Model Products Image
+  let optionItemsModel = document.querySelectorAll(".main-product-model");
+  if (optionItemsModel.length) {
+    optionItemsModel.forEach(function (item) {
+      item.addEventListener("click", function (event) {
+        let currentSource = event.target.src;
+        const mainProduct = document.querySelector(".main-product");
+        mainProduct.src = currentSource;
       });
     });
   }
+}
+
+//For Active Border in Options in Product Page
+let optionsItemsContainer = document.querySelectorAll(".options-items-container");
+for (let j = 0; j < optionsItemsContainer.length; j++) {
+  optionsItemsContainer[j].addEventListener("click", function () {
+    let addBorder = document.getElementsByClassName("active-border");
+    if (addBorder.length > 0) {
+      addBorder[0].className = addBorder[0].className.replace(" active-border", "");
+    }
+    this.className += " active-border";
+  });
 }
