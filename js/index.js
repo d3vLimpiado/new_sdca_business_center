@@ -272,3 +272,22 @@ for (let j = 0; j < optionsItemsContainer.length; j++) {
     this.className += " active-border";
   });
 }
+
+// For Orders Page
+const orderTable = document.querySelector(".order-table");
+
+if(orderTable) {
+  const orderTableTabs = orderTable.querySelector(".order-table-tabs");
+  const orderTableAttribute = orderTable.getAttribute("data-active-tab")
+
+  Array.from(orderTableTabs.children).forEach((orderTab, idx) => {
+    if(parseInt(orderTableAttribute ?? 0) === idx) {
+      orderTab.classList.add("active");
+    }
+    orderTab.addEventListener("click", () => {
+      orderTable.setAttribute("data-active-tab", idx)
+      Array.from(orderTableTabs.children).forEach(orderTab => orderTab.classList.remove("active"))
+      orderTab.classList.add("active");
+    })
+  })
+}
