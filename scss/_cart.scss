@@ -15,26 +15,28 @@
 .cart-content-table {
   border-collapse: collapse;
   border: 1px solid var(--color_dark);
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
   
   th, td {
     padding: 20px;
+    text-align: center;
+
+    &:nth-child(2) {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
   }
 
   thead {
     height: 60px;
     border: 1px solid var(--color_dark);
-
-    &:first-child {
-      text-align: left;
-    }
-  }
-
-  th:nth-child(2), td:nth-child(2) {
-    text-align: center;
-  }
-
-  th:last-child, td:last-child {
-    text-align: right;
   }
 
   &-items {
@@ -130,11 +132,36 @@
   min-height: 250px;
   height: max-content;
   border: 1px solid var(--color_dark);
+  padding: 20px;
+
+  .remove-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    &-text {
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color_primary);
+      }
+    }
+
+    &-btn {
+      width: 200px;
+      height: 30px;
+      font-size: 20px;
+    }
+
+  }
 
   &-total {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    margin-top: 30px;
 
     &-text {
       font-size: 25px;

@@ -33,9 +33,15 @@
             <img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="main-product" alt="red-shirt">
           </div>
           <div class="options-container">
-            <img  src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt">
-            <img  src="<?php echo $url ?>assets/images/products/blue-shirt.png" class="option-items" alt="red-shirt">
-            <img  src="<?php echo $url ?>assets/images/products/white-shirt.png" class="option-items" alt="red-shirt">
+            <span class="options-items-container">
+              <img src="<?php echo $url ?>assets/images/products/red-shirt.png" class="option-items" alt="red-shirt">
+            </span>
+            <span class="options-items-container">
+              <img src="<?php echo $url ?>assets/images/products/blue-shirt.png" class="option-items" alt="blue-shirt">
+            </span>
+            <span class="options-items-container">
+              <img src="<?php echo $url ?>assets/images/products/white-shirt.png" class="option-items" alt="white-shirt">
+            </span>
           </div>
         </div>
       </div>
@@ -44,16 +50,16 @@
           <div class="product-name">SDCA Red Shirt</div>
           <div class="product-price">₱500.00</div>
           <div class="product-sizing-container">
-            <span class="product-item">XS</span>
-            <span class="product-item">S</span>
-            <span class="product-item">M</span>
-            <span class="product-item">L</span>
-            <span class="product-item">XL</span>
-            <span class="product-item">2XL</span>
-            <span class="product-item">3XL</span>
-            <span class="product-item">4XL</span>
-            <span class="product-item">5XL</span>
-            <span class="product-item">SPECIAL</span>
+            <span class="sdca-button disabled product-item">XS</span>
+            <span class="sdca-button product-item">S</span>
+            <span class="sdca-button product-item">M</span>
+            <span class="sdca-button product-item">L</span>
+            <span class="sdca-button product-item">XL</span>
+            <span class="sdca-button product-item">2XL</span>
+            <span class="sdca-button product-item">3XL</span>
+            <span class="sdca-button product-item">4XL</span>
+            <span class="sdca-button product-item">5XL</span>
+            <span class="sdca-button product-item">SPECIAL</span>
           </div>
           <div class="quantity-container">
             <div href="" class="quantity-border" id="decrease"><img alt="minus-icon" src="<?php echo $url; ?>assets/icons/products-icon/decrease-icon.svg" /></div>
@@ -161,7 +167,7 @@
       <div class="sdca-modal-bg"></div>
       <div class="sdca-modal-custom-container">
         <div class="prompt-message-container">
-          <span><img alt="exclamation-icon" class="prompt-icon" src="<?php echo $url; ?>assets/icons/products-icon/exclamation-icon.svg" /></span>
+          <span class="prompt-icon-container"><img alt="exclamation-icon" class="prompt-icon" src="<?php echo $url; ?>assets/icons/products-icon/exclamation-icon.svg" /></span>
           <span class="caution-text">CAUTION!</span>
           <span>Please review and confirm your item within the next 30 minutes. Failure to do so will result in the item being automatically removed from your cart.</span>
         </div>
