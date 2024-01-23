@@ -1324,7 +1324,7 @@ html, body {
   width: 50px;
   height: 50px;
   background-position: center center;
-  background-color: white;
+  background-color: transparent;
   border: 1px solid var(--color_primary);
   background-size: 24px 24px;
   background-repeat: no-repeat;
