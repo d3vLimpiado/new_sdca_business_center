@@ -1,6 +1,7 @@
 <?php 
   $url = "/sdca_business_center/";
   $pageTitle = "";
+  $active = false;
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +25,43 @@
         <div class="searchBar">
           <input class="searchBarInput" />
           <i class="searchBarIcon"></i>
+          <div class="searchBar-dropdown <?php echo $active ? "active" : "" ?>">
+            <div class="dropdown-item">
+              <img src="<?php echo $url ?>assets/images/products/blue-shirt.png" />
+              <div class="dropdown-item-des">
+                <h3>Product #1</h3>
+                <p>Php 500.00</p>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <img src="<?php echo $url ?>assets/images/products/blue-shirt.png" />
+              <div class="dropdown-item-des">
+                <h3>Product #1</h3>
+                <p>Php 500.00</p>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <img src="<?php echo $url ?>assets/images/products/blue-shirt.png" />
+              <div class="dropdown-item-des">
+                <h3>Product #1</h3>
+                <p>Php 500.00</p>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <img src="<?php echo $url ?>assets/images/products/blue-shirt.png" />
+              <div class="dropdown-item-des">
+                <h3>Product #1</h3>
+                <p>Php 500.00</p>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <img src="<?php echo $url ?>assets/images/products/blue-shirt.png" />
+              <div class="dropdown-item-des">
+                <h3>Product #1</h3>
+                <p>Php 500.00</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="user">
           <a href="<?php echo $url; ?>pages/cart.php" class="userCart">

@@ -1324,25 +1324,28 @@ html, body {
   width: 50px;
   height: 50px;
   background-position: center center;
-  background-color: var(--color_primary);
+  background-color: transparent;
+  border: 1px solid var(--color_primary);
   background-size: 24px 24px;
   background-repeat: no-repeat;
   border-radius: 50px;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.2s;
 }
 .order-status-progress-processing {
-  background-image: url("../assets/icons/shopping-cart-check.svg");
+  background-image: url("../assets/icons/shopping-cart-check-red.svg");
 }
 .order-status-progress-payment {
-  background-image: url("../assets/icons/credit-card.svg");
+  background-image: url("../assets/icons/credit-card-red.svg");
 }
 .order-status-progress-prepared {
-  background-image: url("../assets/icons/shopping-bag.svg");
+  background-image: url("../assets/icons/shopping-bag-red.svg");
 }
 .order-status-progress-claimed {
-  background-image: url("../assets/icons/package.svg");
+  background-image: url("../assets/icons/package-red.svg");
 }
 .order-status-progress-completed {
-  background-image: url("../assets/icons/thumbs-up.svg");
+  background-image: url("../assets/icons/thumbs-up-red.svg");
 }
 .order-status-progress::after {
   content: "";
@@ -1357,16 +1360,16 @@ html, body {
   transition: transform 0.25s ease-in;
   transform: translateX(-100%);
 }
-.order-status-progress[data-progress-status="1"]::after {
+.order-status-progress[data-progress-status="2"]::after {
   transform: translateX(-75%);
 }
-.order-status-progress[data-progress-status="2"]::after {
+.order-status-progress[data-progress-status="3"]::after {
   transform: translateX(-50%);
 }
-.order-status-progress[data-progress-status="3"]::after {
+.order-status-progress[data-progress-status="4"]::after {
   transform: translateX(-25%);
 }
-.order-status-progress[data-progress-status="4"]::after {
+.order-status-progress[data-progress-status="5"]::after {
   transform: translateX(0%);
 }
 .order-status-progress-label {
@@ -1472,4 +1475,80 @@ body {
 
 .topnav-content, .nav-content, .main-content, .footer-content {
   max-width: 1596px;
+}
+
+.userSecText {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-status-progress-processing {
+  transition-delay: 0;
+}
+
+.order-status-progress:is([data-progress-status="1"], [data-progress-status="2"], [data-progress-status="3"], [data-progress-status="4"], [data-progress-status="5"])
+.order-status-progress-processing {
+  background-image: url("../assets/icons/shopping-cart-check.svg");
+  background-color: var(--color_primary);
+}
+
+.order-status-progress:is([data-progress-status="2"], [data-progress-status="3"], [data-progress-status="4"], [data-progress-status="5"]) .order-status-progress-payment {
+  background-image: url("../assets/icons/credit-card.svg");
+  background-color: var(--color_primary);
+}
+
+.order-status-progress:is([data-progress-status="3"], [data-progress-status="4"], [data-progress-status="5"]) .order-status-progress-prepared {
+  background-image: url("../assets/icons/shopping-bag.svg");
+  background-color: var(--color_primary);
+}
+
+.order-status-progress:is([data-progress-status="4"], [data-progress-status="5"]) .order-status-progress-claimed {
+  background-image: url("../assets/icons/package.svg");
+  background-color: var(--color_primary);
+}
+
+.order-status-progress:is([data-progress-status="5"]) .order-status-progress-completed {
+  background-image: url("../assets/icons/thumbs-up.svg");
+  background-color: var(--color_primary);
+}
+
+.searchBar-dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  border-radius: 5px;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  min-height: 50px;
+  max-height: 500px;
+  overflow: hidden scroll;
+  cursor: pointer;
+}
+
+.searchBar-dropdown > .dropdown-item:hover {
+  background-color: rgb(34,34,34, 0.2);
+}
+
+.searchBar-dropdown.active {
+  display: block;
+}
+
+.dropdown-item {
+  display: flex;
+  padding: 10px;
+}
+
+.dropdown-item-des h3 {
+  font-size: 25px;
+}
+
+.dropdown-item img {
+  width: 100px;
+}
+
+.dropdown-item-des {
+  margin-left: 20px;
 }
